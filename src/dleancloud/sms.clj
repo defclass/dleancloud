@@ -6,13 +6,13 @@
 
 (defn wrap-request [[url credential-map body]]
   [url {:body    (generate-string body)
-        :headers (merge {:content-type :json :accept :json} credential-map)
+        :headers (merge {:content-type "application/json"} credential-map)
         :as :auto}])
 
 (defn send-code [credential-map phone-num & [voice?]]
   (let [params (if (nil? voice?)
-                {:mobilePhoneNumber phone-num}
-                {:mobilePhoneNumber phone-num :smsType :voice})]
+                 {:mobilePhoneNumber (str phone-num)}
+                 {:mobilePhoneNumber (str phone-num) :smsType :voice})]
 
     [(str sms-url "requestSmsCode") credential-map params]))
 
