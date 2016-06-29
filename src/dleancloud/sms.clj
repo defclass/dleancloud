@@ -17,7 +17,7 @@
     [(str sms-url "requestSmsCode") credential-map params]))
 
 (defn verify-code [credential-map phone-num code]
-  [(format "%sverifySmsCode/%s??mobilePhoneNumber=%s" sms-url code phone-num)
+  [(format "%sverifySmsCode/%s?mobilePhoneNumber=%s" sms-url code phone-num)
    credential-map nil])
 
 (defn send-tpl [credential-map params]

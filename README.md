@@ -61,7 +61,7 @@ Examples:
 ;           "Strict-Transport-Security" "max-age=31536000"},
 ; :body {},
 ; :request-time 256,
-; :trace-redirects ["https://api.leancloud.cn/1.1/verifySmsCode/732229??mobilePhoneNumber=telephone-num-should-be-string"],
+; :trace-redirects ["https://api.leancloud.cn/1.1/verifySmsCode/XX-6-digital-code-xx?mobilePhoneNumber=telephone-num-should-be-string"],
 ; :orig-content-encoding nil,
 ; :content-type :application/json,
 ; :content-type-params {:charset "utf-8"}}
