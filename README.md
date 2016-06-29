@@ -1,6 +1,6 @@
 # dleancloud
 
-A Clojure library designed to support leancloud API
+A Clojure library designed to support leancloud API. Just implement sms API for now.
 
 
 ## Usage
